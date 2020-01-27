@@ -55,7 +55,7 @@ const Login = props => {
           onChange={handleChange}
         />
 
-        <button className="login-btn"> Log In </button>
+        <button> Log In </button>
       </form>
     </>
   );
