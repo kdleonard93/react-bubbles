@@ -14,11 +14,11 @@ const Login = props => {
     e.preventDefault();
 
     axiosWithAuth()
-      .post("/login", data)
+      .post("/api/login", data)
       .then(res => {
         console.log(res.data);
         localStorage.setItem("token", res.data.payload);
-        props.history.push("/bubblepage");
+        props.history.push("/BubblePage");
       })
       .catch(error => {
         console.log("Error:", error);
