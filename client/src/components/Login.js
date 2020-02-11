@@ -20,7 +20,7 @@ const Login = props => {
     e.preventDefault();
     console.log(data);
     axiosWithAuth()
-      .post("/api/login", data)
+      .post("/login", data)
       .then(res => {
         localStorage.setItem("token", res.data.payload);
         props.history.push("/BubblesPage");
